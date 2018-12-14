@@ -3,11 +3,71 @@ body {
     color: maroon;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d9bfb7;
+    height: 0;
+}
+
+a,
+a:visited {
+    color: #00e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red!important; 
+}
+
+div#nav {
+    font-size: 9pt;
+    color: #b86;
+    display: block;
+    text-align: center;
+}
+
+div#nav a {
+    font-weight: 400;
+    padding: 1px;
+    text-decoration: none;
+    color: maroon;
+}
+
+div#constitution {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    clear: both;
+}
+
+div#schedule {
+    width: 468px;
+    margin: auto;
+    font-size: 11px;
+}
+
+div#schedule h3 {
+    text-align: center;
+}
+
+div#schedule ul {
+    margin: 0;
+}
+
+div#hide-schedule {
+    text-align: right;
+    display: block;
+}
+
+div#ctrl-links {
+    clear: both;
 }
 
 div.banner {
@@ -28,6 +88,10 @@ div.bannerTitle {
     font-weight: 700;
     letter-spacing: -2px;
     margin-top: 0;
+}
+
+hr.underBanner {
+    width: 90%;
 }
 
 div.segment {
