@@ -2,29 +2,43 @@
 <head>
   <meta charset="utf-8">
   <link rel="shotcut icon" href="https://nalib.github.io/parliament/page_resources/favicon.ico">
-  <link rel="stylesheet" title="text/css" href="https://nalib.github.io/parliament/page_resources/style.css">
-  <!-- <link rel="stylesheet" title="text/css" href="page_resources/style.css"> -->
-  <script type="text/javascript" src="https://nalib.github.io/parliament/page_resources/script.js"></script> 
-  <!-- <script type="text/javascript" src="page_resources/script.js"></script>  -->
+  <!-- <link rel="stylesheet" title="text/css" href="https://nalib.github.io/parliament/page_resources/style.css"> -->
+  <link rel="stylesheet" title="text/css" href="page_resources/style.css">
+  <script src="page_resources/papaparse.js"></script>
+  <!-- <script type="text/javascript" src="https://nalib.github.io/parliament/page_resources/script.js"></script>  -->
+  <script type="text/javascript" src="page_resources/script.js"></script> 
+  <script type="text/javascript" src="page_resources/parliament.js"></script> 
   <title>4chan Assembly</title>
 </head>
-<body>
+<body onload="loadElements()">
   <div id="nav">
     <span>
       [
-      <a href="" title="Imperial Nationalist Party">inp</a>
+      <a href="#ancap_party_info" title="Anglo Ancap Party">ancap</a>
       /
-      <a href="" title="Labour Party">lap</a>
+      <a href="#bnp_party_info" title="Bonapartist Party">bnp</a>
       /
-      <a href="" title="Bonapartist Party">bnp</a>
+      <a href="#efp_party_info" title="Ecofascism Party">efp</a>
       /
-      <a href="" title="New Federalist Party">fed</a>
+      <a href="#fed_party_info" title="New Federalist Party">fed</a>
       /
-      <a href="" title="National Liberal Party">nlp</a>
+      <a href="#inp_party_info" title="Imperial Nationalist Party">inp</a>
       /
-      <a href="" title="Ecofascism Party">efp</a>
+      <a href="#lab_party_info" title="Labour Party">lab</a>
       /
-      <a href="" title="add all the rest">...</a>
+      <a href="#med_party_info" title="Mediterranean Party">med</a>
+      /
+      <a href="#nlp_party_info" title="National Liberal Party">nlp</a>
+      /
+      <a href="#nls_party_info" title="	National Liberty & Sovereignty">nls</a>
+      /
+      <a href="#npc_party_info" title="National Populous of Conservatives">npc</a>
+      /
+      <a href="#nzrp_party_info" title="Neo Zeon Revival Party">nzrp</a>
+      /
+      <a href="#pkp_party_info" title="Philosopher Kings' Party">pkp</a>
+      /
+      <a href="#thp_party_info" title="The Hella Party">thp</a>
       ]
     </span>
   </div>
@@ -60,31 +74,89 @@
   <hr/>
   <div id="ctrl-links">
     [
+    <a href="https://nalib.github.io/parliament/test.html" title="">Legislature</a>
+    <!-- <a href="#legislature_info" title="">Legislature</a> -->
+    ] [
+    <a href="#executive_info" title="">Executive</a>
+    ] [
+    <a href="#judiciary_info" title="">Judiciary</a>
+    ] • [
+    <a href="#parties_info" title="">Parties</a>
+    ] • [
     <a href="https://4chan-parliament.fandom.com/wiki/New_/pol/_Parliament_Wiki" title="">Wiki</a>
     ] [
     <a href="https://github.com/NaLib/parliament/" title="">Repo</a>
+    ] [
+    <a href="#archive_segment" title="">Archive</a>
     ]
   </div>
   <hr/>
-  <div class="segment">
-    <h1>Executive branch</h1>
+  <div class="segment" id="legislature_info">
+    <h2>Legislature</h2>
+    <svg id="svg" width="50%" height="500" onload="drawParliament()" style="border: 1px solid black;">
+      <!-- <circle id="svg_circle" onmouseover="fun1()" cx="100" cy="100" r="50" stroke="black" stroke-width="5" fill="white" /> -->
+      Sorry, your browser does not support inline SVG.
+    </svg>
+  </div>
+  <hr/>
+  <div class="segment" id="executive_info">
+    <h2>Executive branch</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim leo, sodales eu dolor vel, venenatis consectetur ante. Quisque sit amet libero volutpat, feugiat sapien ut, dapibus neque. Donec nec ligula orci. Nam vel purus id justo pellentesque feugiat. Morbi sollicitudin imperdiet ex in ultricies. Nam laoreet mattis sapien faucibus tristique. Nulla dignissim elit vitae leo tempus, ut ultricies nibh malesuada. Curabitur ultricies eros vel orci lacinia, ultricies porta tellus dictum. Pellentesque risus odio, commodo vel eleifend ut, posuere vel nisi. Morbi cursus viverra congue. Morbi lacinia elit arcu, ut efficitur ante sagittis id. Curabitur ut auctor mauris.</p>
   </div>
-  <div class="segment">
-    <h1>Legislature</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim leo, sodales eu dolor vel, venenatis consectetur ante. Quisque sit amet libero volutpat, feugiat sapien ut, dapibus neque. Donec nec ligula orci. Nam vel purus id justo pellentesque feugiat. Morbi sollicitudin imperdiet ex in ultricies. Nam laoreet mattis sapien faucibus tristique. Nulla dignissim elit vitae leo tempus, ut ultricies nibh malesuada. Curabitur ultricies eros vel orci lacinia, ultricies porta tellus dictum. Pellentesque risus odio, commodo vel eleifend ut, posuere vel nisi. Morbi cursus viverra congue. Morbi lacinia elit arcu, ut efficitur ante sagittis id. Curabitur ut auctor mauris.</p>
-  </div>
-  <div class="segment">
+  <hr/>
+  <div class="segment" id="judiciary_info">
     <h1>Judiciary</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim leo, sodales eu dolor vel, venenatis consectetur ante. Quisque sit amet libero volutpat, feugiat sapien ut, dapibus neque. Donec nec ligula orci. Nam vel purus id justo pellentesque feugiat. Morbi sollicitudin imperdiet ex in ultricies. Nam laoreet mattis sapien faucibus tristique. Nulla dignissim elit vitae leo tempus, ut ultricies nibh malesuada. Curabitur ultricies eros vel orci lacinia, ultricies porta tellus dictum. Pellentesque risus odio, commodo vel eleifend ut, posuere vel nisi. Morbi cursus viverra congue. Morbi lacinia elit arcu, ut efficitur ante sagittis id. Curabitur ut auctor mauris.</p>
   </div>
+  <hr/>
   <div class="segment">
     <h1>Assembly Symbols Contest</h1>
   </div>
-  <div class="segment">
-    <h1>Lorem ipsum</h1>
+  <hr/>
+  <div class="segment" id="inp_party_info">
+    <h1>Imperial National Party</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim leo, sodales eu dolor vel, venenatis consectetur ante. Quisque sit amet libero volutpat, feugiat sapien ut, dapibus neque. Donec nec ligula orci. Nam vel purus id justo pellentesque feugiat. Morbi sollicitudin imperdiet ex in ultricies. Nam laoreet mattis sapien faucibus tristique. Nulla dignissim elit vitae leo tempus, ut ultricies nibh malesuada. Curabitur ultricies eros vel orci lacinia, ultricies porta tellus dictum. Pellentesque risus odio, commodo vel eleifend ut, posuere vel nisi. Morbi cursus viverra congue. Morbi lacinia elit arcu, ut efficitur ante sagittis id. Curabitur ut auctor mauris.</p>
     <p>Mauris luctus urna vitae justo tincidunt fermentum. Quisque a turpis eget ipsum dapibus vehicula. Quisque fermentum magna a diam iaculis, a ullamcorper mauris placerat. Nullam tristique ultrices mi nec convallis. Fusce quis porta sem. Donec pellentesque scelerisque blandit. In convallis porta tellus sit amet malesuada. Vestibulum eu purus lorem.</p>
   </div>
+  <hr/>
+  <div class="segment" id="nlp_party_info">
+    <h1>National Liberal Party</h1>
+    <p>bla bla lba bla</p>
+  </div>
+  <hr/>
+  <div id="archive_segment">
+    <table id="archive_table">
+      <thead>
+        <tr>
+          <td>Date</td>
+          <td>Excerpt</td>
+          <td>Link</td>
+        </tr>
+      </thead>
+      <tbody id="archive_table_body">
+      </tbody>
+    </table>
+  </div>
+  <hr/>
+  <div>
+      [
+      <a href="#legislature_info" title="">Legislature</a>
+      ] [
+      <a href="#executive_info" title="">Executive</a>
+      ] [
+      <a href="#judiciary_info" title="">Judiciary</a>
+      ] • [
+      <a href="#parties_info" title="">Parties</a>
+      ] • [
+      <a href="https://4chan-parliament.fandom.com/wiki/New_/pol/_Parliament_Wiki" title="">Wiki</a>
+      ] [
+      <a href="https://github.com/NaLib/parliament/" title="">Repo</a>
+      ] [
+      <a href="#archive_segment" title="">Archive</a>
+      ] • [
+      <a href="#top" title="">Top</a>
+      ]
+    </div>
+    <hr/>
  </body>
 </html>
