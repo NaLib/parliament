@@ -12,9 +12,6 @@ function toggleSchedule(obj) {
 };
 
 function loadElements() {
-
-    testFunction();
-
     loadArchive();
 };
 
