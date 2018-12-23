@@ -135,7 +135,7 @@ table thead tr td {
 
 /* Executive branch chart */
 
-#exec-container {
+.exec-container {
     /* background-color: aqua;  */
     display: flex; 
     justify-content: space-evenly; 
@@ -149,13 +149,18 @@ table thead tr td {
     margin: 0 0;
 }
 
-.exec-position {
+.exec-position, .exec-committee {
     width: 300px;
     background-color: #f0e0d6;
     border: 1px solid #d9bfb7;
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 10px;
     text-align: center;
+}
+
+.exec-committee
+{
+    width: 220px;
 }
 
 .exec-position hr {
@@ -165,7 +170,17 @@ table thead tr td {
     height: 0;
 }
 
-.exec-position .party {
+.exec-position .name, .exec-committee .name {
+    color: #117743;
+    font-weight: 700;
+}
+
+.exec-position .tripcode, .exec-committee .tripcode {
+    color: #117743;
+    font-weight: 400 !important;
+}
+
+.exec-position .party, .exec-committee .party {
     padding: 0 5px;
     border-radius: 6px;
     font-size: 0.8em;
@@ -178,5 +193,7 @@ table thead tr td {
 }
 
 .exec-position-figure {
-    font-size: 11pt;
+    font-size: 10pt;
+    white-space: nowrap;
+    overflow: hidden;
 }
