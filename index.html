@@ -2,12 +2,12 @@
 <head>
   <meta charset="utf-8">
   <link rel="shotcut icon" href="https://nalib.github.io/parliament/page_resources/favicon.ico">
-  <!-- <link rel="stylesheet" title="text/css" href="https://nalib.github.io/parliament/page_resources/style.css"> -->
-  <link rel="stylesheet" title="text/css" href="page_resources/style.css">
-  <script src="page_resources/papaparse.js"></script>
-  <!-- <script type="text/javascript" src="https://nalib.github.io/parliament/page_resources/script.js"></script>  -->
-  <script type="text/javascript" src="page_resources/script.js"></script> 
-  <script type="text/javascript" src="page_resources/parliament.js"></script> 
+  <link rel="stylesheet" title="text/css" href="https://nalib.github.io/parliament/page_resources/style.css">
+  <!-- <link rel="stylesheet" title="text/css" href="page_resources/style.css"> -->
+  <script src="https://nalib.github.io/parliament/page_resources/papaparse.js"></script>
+  <!-- <script type="text/javascript" src="page_resources/script.js"></script>  -->
+  <script type="text/javascript" src="https://nalib.github.io/parliament/page_resources/script.js"></script> 
+  <script type="text/javascript" src="https://nalib.github.io/parliament/page_resources/parliament.js"></script> 
   <title>4chan Assembly</title>
 </head>
 <body onload="loadElements()">
@@ -26,8 +26,6 @@
       /
       <a href="#lab_party_info" title="Labour Party">lab</a>
       /
-      <a href="#med_party_info" title="Mediterranean Party">med</a>
-      /
       <a href="#nlp_party_info" title="National Liberal Party">nlp</a>
       /
       <a href="#nls_party_info" title="	National Liberty & Sovereignty">nls</a>
@@ -37,6 +35,8 @@
       <a href="#nzrp_party_info" title="Neo Zeon Revival Party">nzrp</a>
       /
       <a href="#pkp_party_info" title="Philosopher Kings' Party">pkp</a>
+      /
+      <a href="#spqr_party_info" title="Roman Party">spqr</a>
       /
       <a href="#thp_party_info" title="The Hella Party">thp</a>
       ]
@@ -74,8 +74,7 @@
   <hr/>
   <div id="ctrl-links">
     [
-    <a href="https://nalib.github.io/parliament/test.html" title="">Legislature</a>
-    <!-- <a href="#legislature_info" title="">Legislature</a> -->
+    <a href="#legislature_info" title="">Legislature</a>
     ] [
     <a href="#executive_info" title="">Executive</a>
     ] [
@@ -91,22 +90,88 @@
     ]
   </div>
   <hr/>
+  <h2>Legislature</h2>
   <div class="segment" id="legislature_info">
-    <h2>Legislature</h2>
-    <svg id="svg" width="50%" height="500" onload="drawParliament()" style="border: 1px solid black;">
+    <svg id="svg" width="50%" height="300" onload="drawParliament()" style="border: 1px solid black; margin: auto; display:block; ">
       <!-- <circle id="svg_circle" onmouseover="fun1()" cx="100" cy="100" r="50" stroke="black" stroke-width="5" fill="white" /> -->
       Sorry, your browser does not support inline SVG.
     </svg>
   </div>
-  <hr/>
-  <div class="segment" id="executive_info">
-    <h2>Executive branch</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim leo, sodales eu dolor vel, venenatis consectetur ante. Quisque sit amet libero volutpat, feugiat sapien ut, dapibus neque. Donec nec ligula orci. Nam vel purus id justo pellentesque feugiat. Morbi sollicitudin imperdiet ex in ultricies. Nam laoreet mattis sapien faucibus tristique. Nulla dignissim elit vitae leo tempus, ut ultricies nibh malesuada. Curabitur ultricies eros vel orci lacinia, ultricies porta tellus dictum. Pellentesque risus odio, commodo vel eleifend ut, posuere vel nisi. Morbi cursus viverra congue. Morbi lacinia elit arcu, ut efficitur ante sagittis id. Curabitur ut auctor mauris.</p>
+  <div class="exec-position" style="margin: 20px auto;">
+    <div class="exec-position-title">
+      President of the Assembly
+    </div>
+    <hr/>
+    <div class="exec-position-figure">
+      AnonLogic	!!vAvI5ANY+tu <span class="party" title="New Federalist Party" style="background-color: dodgerblue; color: white;">FED</span>
+    </div>
   </div>
   <hr/>
-  <div class="segment" id="judiciary_info">
-    <h1>Judiciary</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim leo, sodales eu dolor vel, venenatis consectetur ante. Quisque sit amet libero volutpat, feugiat sapien ut, dapibus neque. Donec nec ligula orci. Nam vel purus id justo pellentesque feugiat. Morbi sollicitudin imperdiet ex in ultricies. Nam laoreet mattis sapien faucibus tristique. Nulla dignissim elit vitae leo tempus, ut ultricies nibh malesuada. Curabitur ultricies eros vel orci lacinia, ultricies porta tellus dictum. Pellentesque risus odio, commodo vel eleifend ut, posuere vel nisi. Morbi cursus viverra congue. Morbi lacinia elit arcu, ut efficitur ante sagittis id. Curabitur ut auctor mauris.</p>
+  <h2>Executive branch</h2>
+  <div id="exec-container">
+    <div class="exec-position-group">
+      <div class="exec-position">
+        <div class="exec-position-title">
+          ♚ Kaiser ♚
+        </div>
+        <hr/>
+        <div class="exec-position-figure">
+          AA420 !!LryFhlosSlc  <span class="party" title="Anglo Ancap Party" style="background-color: chartreuse; color: black;">ANCAP</span>
+        </div>
+      </div>
+      <div class="exec-position">
+        <div class="exec-position-title">
+          Vicegerent
+        </div>
+        <hr/>
+        <div class="exec-position-figure">
+          Reichsführer INP !!XY5tWycuvat <span class="party" title="Imperial Nationalist Party" style="background-color: maroon; color: white;">INP</span>
+        </div>
+      </div>
+    </div> 
+    <div class="exec-position-group">
+      <div class="exec-position">
+        <div class="exec-position-title">
+          Chancellor
+        </div>
+        <hr/>
+        <div class="exec-position-figure">
+          INP !!ZqlaDBgHayD <span class="party" title="Imperial Nationalist Party" style="background-color: maroon; color: white;">INP</span>
+        </div>
+      </div>
+      <div class="exec-position">
+        <div class="exec-position-title">
+          Vice-Chancellor
+        </div>
+        <hr/>
+        <div class="exec-position-figure">
+          NaLib	!!GII1hPzfQ2e <span class="party" title="National Liberal Party" style="background-color: orange; color: black;">NLP</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <h2>Judiciary</h2>
+  <div class="exec-position" style="margin: 20px auto;">
+    <div class="exec-position-title">
+      Supreme Court
+    </div>
+    <hr/>
+    <div class="exec-position-figure">
+      Publius !!So+K1gxV24o <span class="party" title="New Federalist Party" style="background-color: dodgerblue; color: white;">FED</span>
+    </div>
+    <div class="exec-position-figure">
+      SataniaFag !Ko9saTanIA <span class="party" title="The Hella Party" style="background-color: SteelBlue; color: white;">THP</span>
+    </div>
+    <div class="exec-position-figure">
+      Jezza Corbachev	!!UfkSu8sJmvS <span class="party" title="Labour Party" style="background-color: black; color: white;">LAB</span>
+    </div>
+    <div class="exec-position-figure">
+      ChieftainMcSlippy !!AdJ8SNxAT2K <span class="party" title="no party affiliation" style="background-color: gray; color: white;">NPA</span>
+    </div>
+    <div class="exec-position-figure">
+      RubberMeal !!oTbIWXrNFDX <span class="party" title="Imperial Nationalist Party" style="background-color: maroon; color: white;">INP</span>
+    </div>
   </div>
   <hr/>
   <div class="segment">

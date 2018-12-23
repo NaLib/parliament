@@ -26,6 +26,13 @@ a:hover {
     color: red!important; 
 }
 
+h2 {
+    color: #cc1105; /* #117743;*/
+    font-weight: 700;
+    text-align: center;
+    /* margin-left: 14pt; */
+}
+
 div#nav {
     font-size: 9pt;
     color: #b86;
@@ -102,4 +109,74 @@ div.segment {
     display: table;
     padding: 2px;
     margin: 4px 0;
+}
+
+/* Archive table */
+
+table {
+    max-width: 80%;
+    margin: 10px auto 0;
+    border-spacing: 1px;
+}
+
+table thead tr {
+    background-color: #ede2d4;
+}
+
+table thead tr td {
+    background-color: #ea8;
+    color: #800;
+    font-weight: 700;
+    border: 1px solid #800;
+    text-align: center;
+    font-size: 9pt;
+    padding: 5px;
+}
+
+/* Executive branch chart */
+
+#exec-container {
+    /* background-color: aqua;  */
+    display: flex; 
+    justify-content: space-evenly; 
+    /* padding: 40px 0; */
+}
+
+.exec-position-group {
+    /* background-color: tomato;  */
+    display: flex; 
+    flex-direction: column;
+    margin: 0 0;
+}
+
+.exec-position {
+    width: 300px;
+    background-color: #f0e0d6;
+    border: 1px solid #d9bfb7;
+    margin: 20px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.exec-position hr {
+    width: 50%;
+    border: none;
+    border-top: 1px solid #d9bfb7;
+    height: 0;
+}
+
+.exec-position .party {
+    padding: 0 5px;
+    border-radius: 6px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.exec-position-title {
+    font-size: 13pt;
+    font-weight: 600;
+}
+
+.exec-position-figure {
+    font-size: 11pt;
 }
