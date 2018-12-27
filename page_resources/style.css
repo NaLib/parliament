@@ -136,20 +136,18 @@ table thead tr td {
 /* Executive branch chart */
 
 .exec-container {
-    /* background-color: aqua;  */
     display: flex; 
     justify-content: space-evenly; 
     /* padding: 40px 0; */
 }
 
-.exec-position-group {
-    /* background-color: tomato;  */
+.exec-container-vertical {
     display: flex; 
     flex-direction: column;
     margin: 0 0;
 }
 
-.exec-position, .exec-committee {
+.exec-position-primary{
     width: 300px;
     background-color: #f0e0d6;
     border: 1px solid #d9bfb7;
@@ -158,42 +156,52 @@ table thead tr td {
     text-align: center;
 }
 
-.exec-committee
+.exec-position-secondary
 {
     width: 220px;
+    background-color: #f0e0d6;
+    border: 1px solid #d9bfb7;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
 }
 
-.exec-position hr {
+.exec-position-primary hr {
     width: 50%;
     border: none;
     border-top: 1px solid #d9bfb7;
     height: 0;
 }
 
-.exec-position .name, .exec-committee .name {
+.name {
     color: #117743;
     font-weight: 700;
 }
 
-.exec-position .tripcode, .exec-committee .tripcode {
+.tripcode {
     color: #117743;
     font-weight: 400 !important;
 }
 
-.exec-position .party, .exec-committee .party {
+.party {
     padding: 0 5px;
     border-radius: 6px;
     font-size: 0.8em;
     cursor: pointer;
 }
 
-.exec-position-title {
+.exec-position-primary .title {
     font-size: 13pt;
+    font-weight: 600;
+}
+
+.exec-position-secondary .title {
+    font-size: 11pt;
     font-weight: 600;
 }
 
 .exec-position-figure {
     font-size: 10pt;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     overflow: hidden;
 }
