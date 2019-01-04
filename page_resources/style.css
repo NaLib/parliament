@@ -133,6 +133,12 @@ table thead tr td {
     padding: 5px;
 }
 
+/* Legislature */
+
+.seat {
+    cursor: pointer;
+}
+
 /* Executive branch chart */
 
 .exec-container {
