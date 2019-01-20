@@ -220,3 +220,22 @@ table thead tr td {
 
 /* Parties segment */
 
+.party-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.party-grid {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.party-segment {
+    width: 200px;
+    background-color: #f0e0d6;
+    border: 1px solid #d9bfb7;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}

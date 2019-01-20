@@ -30,7 +30,7 @@
       /
       <a href="#nlp_party_info" title="National Liberal Party">nlp</a>
       /
-      <a href="#nls_party_info" title="	National Liberty & Sovereignty">nls</a>
+      <a href="#nls_party_info" title="National Liberty & Sovereignty">nls</a>
       /
       <a href="#npc_party_info" title="National Populous of Conservatives">npc</a>
       /
@@ -92,12 +92,10 @@
   </div>
   <hr/>
   <h2 id="legislature_info">Legislature</h2>
-  <!-- <div class="segment" > -->
   <svg id="svg" width="50%" height="350" onload="drawParliament()" style="margin: auto; display:block; border: 0px solid black;">
     <!-- <circle id="svg_circle" onmouseover="fun1()" cx="100" cy="100" r="50" stroke="black" stroke-width="5" fill="white" /> -->
     Sorry, your browser does not support inline SVG.
   </svg>
-  <!-- </div> -->
   <div class="exec-position-primary">
     <div class="title">
       President of the Assembly
@@ -107,6 +105,52 @@
       <span class="name">AnonLogic</span>	
       <span class="tripcode">!!vAvI5ANY+tu</span>
       <span class="party" title="New Federalist Party" style="background-color: dodgerblue; color: white;">FED</span>
+    </div>
+  </div>
+  <div class="exec-container">
+    <div class="exec-position-secondary">
+      <div class="title">
+        Registrar General
+      </div>
+      <hr/>
+      <div class="exec-position-figure">
+        <span class="name">Philosopher King</span>
+        <span class="tripcode">!!v/HenNIVTWA</span>  
+        <span class="party" title="Philosopher Kings\' Party" style="background-color: darkslategray; color: white;">PKP</span>
+      </div>
+    </div>
+    <div class="exec-position-secondary">
+      <div class="title">
+        Rules Committee
+      </div>
+      <hr/>
+      <!-- <div class="exec-position-figure">
+        <span class="name">AA420</span>
+        <span class="tripcode">!!LryFhlosSlc</span>  
+        <span class="party" title="Anglo Ancap Party" style="background-color: chartreuse; color: black;">ANCAP</span>
+      </div> -->
+    </div>
+    <div class="exec-position-secondary">
+      <div class="title">
+        Department of Intelligence and Mass Media
+      </div>
+      <hr/>
+      <div class="exec-position-figure">
+        <span class="name">Leroy INP</span>
+        <span class="tripcode">!!oXc2JHiK7vu</span>  
+        <span class="party" title="Imperial Nationalist Party" style="background-color: maroon; color: white;">INP</span>
+      </div>
+    </div>
+    <div class="exec-position-secondary">
+      <div class="title">
+        YouTube Committee
+      </div>
+      <hr/>
+      <!-- <div class="exec-position-figure">
+        <span class="name">AA420</span>
+        <span class="tripcode">!!LryFhlosSlc</span>  
+        <span class="party" title="Anglo Ancap Party" style="background-color: chartreuse; color: black;">ANCAP</span>
+      </div> -->
     </div>
   </div>
   <hr/>
@@ -161,52 +205,6 @@
       </div>
     </div>
   </div>
-  <div class="exec-container">
-    <div class="exec-position-secondary">
-      <div class="title">
-        Department of Intelligence and Mass Media
-      </div>
-      <hr/>
-      <div class="exec-position-figure">
-        <span class="name">Leroy INP</span>
-        <span class="tripcode">!!oXc2JHiK7vu</span>  
-        <span class="party" title="Imperial Nationalist Party" style="background-color: maroon; color: white;">INP</span>
-      </div>
-    </div>
-    <div class="exec-position-secondary">
-      <div class="title">
-        Rules Committee
-      </div>
-      <hr/>
-      <!-- <div class="exec-position-figure">
-        <span class="name">AA420</span>
-        <span class="tripcode">!!LryFhlosSlc</span>  
-        <span class="party" title="Anglo Ancap Party" style="background-color: chartreuse; color: black;">ANCAP</span>
-      </div> -->
-    </div>
-    <div class="exec-position-secondary">
-      <div class="title">
-        YouTube Committee
-      </div>
-      <hr/>
-      <!-- <div class="exec-position-figure">
-        <span class="name">AA420</span>
-        <span class="tripcode">!!LryFhlosSlc</span>  
-        <span class="party" title="Anglo Ancap Party" style="background-color: chartreuse; color: black;">ANCAP</span>
-      </div> -->
-    </div>
-    <div class="exec-position-secondary">
-      <div class="title">
-        Registrar General
-      </div>
-      <hr/>
-      <div class="exec-position-figure">
-        <span class="name">Philosopher King</span>
-        <span class="tripcode">!!v/HenNIVTWA</span>  
-        <span class="party" title="Philosopher Kings\' Party" style="background-color: darkslategray; color: white;">PKP</span>
-      </div>
-    </div>
-  </div>
   <hr/>
   <h2>Judiciary</h2>
   <div class="exec-position-primary">
@@ -242,16 +240,62 @@
   </div>
   <hr/>
   <h2 id="parties_info">Parties</h2>
-  <div class="segment" id="nlp_party_info">
-    <h3>National Liberal Party</h3>
-    <p>bla bla lba bla</p>
+  <div class="party-grid-container">
+    <div class="party-grid">
+      <div class="party-segment" id="ancap_party_info">
+        <img src="parties/anglo_ancap_party/logo.png" height="100px" alt="Anglo Ancap Party logo">
+        <h3>Anglo Ancap Party</h3>
+      </div>
+      <div class="party-segment" id="bnp_party_info">
+        <img src="parties/bonapartist_party/logo.png" height="100px" alt="Bonapartist Party logo">
+        <h3>Bonapartist Party</h3>
+      </div>
+      <div class="party-segment" id="efp_party_info">
+        <img src="parties/ecofascism_party/logo.png" height="100px" alt="Ecofascism Party logo">
+        <h3>Ecofascism Party</h3>
+      </div>
+      <div class="party-segment" id="fed_party_info">
+        <img src="parties/new_federalist_party/logo.png" height="100px" alt="New Federalist Party logo">
+        <h3>New Federalist Party</h3>
+      </div>
+      <div class="party-segment" id="inp_party_info">
+        <img src="parties/imperial_nationalist_party/logo.png" height="100px" alt="Imperial Nationalist Party logo">
+        <h3>Imperial Nationalist Party</h3>
+      </div>
+      <div class="party-segment" id="lab_party_info">
+        <img src="parties/labour_party/logo.png" height="100px" alt="Labour Party logo">
+        <h3>Labour Party</h3>
+      </div>
+      <div class="party-segment" id="nlp_party_info">
+        <img src="parties/national_liberal_party/logo.png" height="100px" alt="National Liberal Party logo">
+        <h3>National Liberal Party</h3>
+      </div>
+      <div class="party-segment" id="nls_party_info">
+        <img src="parties/national_liberty_and_sovereignty/logo.png" height="100px" alt="National Liberty & Sovereignty logo">
+        <h3>National Liberty & Sovereignty</h3>
+      </div>
+      <div class="party-segment" id="npc_party_info">
+        <img src="parties/national_populous_of_conservatives/logo.png" height="100px" alt="National Populous of Conservatives logo">
+        <h3>National Populous of Conservatives</h3>
+      </div>
+      <div class="party-segment" id="nzrp_party_info">
+        <img src="parties/neo_zeonic_revival_party/logo.png" height="100px" alt="Neo Zeon Revival Party logo">
+        <h3>Neo Zeon Revival Party</h3>
+      </div>
+      <div class="party-segment" id="pkp_party_info">
+        <img src="parties/philosopher_kings_party/logo.png" height="100px" alt="Philosopher Kings' Party Party logo">
+        <h3>Philosopher Kings' Party</h3>
+      </div>
+      <div class="party-segment" id="spqr_party_info">
+        <img src="parties/roman_party/logo.png" height="100px" alt="Roman logo">
+        <h3>Roman Party</h3>
+      </div>
+      <div class="party-segment" id="thp_party_info">
+        <img src="parties/the_hella_party/logo.png" height="100px" alt="The Hella Party logo">
+        <h3>The Hella Party</h3>
+      </div>
+    </div>
   </div>
-  <div class="segment" id="inp_party_info">
-    <h3>Imperial National Party</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim leo, sodales eu dolor vel, venenatis consectetur ante. Quisque sit amet libero volutpat, feugiat sapien ut, dapibus neque. Donec nec ligula orci. Nam vel purus id justo pellentesque feugiat. Morbi sollicitudin imperdiet ex in ultricies. Nam laoreet mattis sapien faucibus tristique. Nulla dignissim elit vitae leo tempus, ut ultricies nibh malesuada. Curabitur ultricies eros vel orci lacinia, ultricies porta tellus dictum. Pellentesque risus odio, commodo vel eleifend ut, posuere vel nisi. Morbi cursus viverra congue. Morbi lacinia elit arcu, ut efficitur ante sagittis id. Curabitur ut auctor mauris.</p>
-    <p>Mauris luctus urna vitae justo tincidunt fermentum. Quisque a turpis eget ipsum dapibus vehicula. Quisque fermentum magna a diam iaculis, a ullamcorper mauris placerat. Nullam tristique ultrices mi nec convallis. Fusce quis porta sem. Donec pellentesque scelerisque blandit. In convallis porta tellus sit amet malesuada. Vestibulum eu purus lorem.</p>
-  </div>
-  <hr/>
   <hr/>
   <div id="archive_segment">
     <table id="archive_table">
